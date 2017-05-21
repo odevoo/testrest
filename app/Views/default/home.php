@@ -173,7 +173,7 @@
                 <div class="space-30"></div>
             </div>
             <div class="row vertical-align-child">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <div>
 
                         <!-- Nav tabs -->
@@ -431,7 +431,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4><a href="#">Vin IDF 15cl</a> <span>5.50 €</span></h4>
-                                            <!-- <p>Pomme, poire</p> -->
+                                            <p>Vin "Blanc de Suresnes"</p>
                                         </div>
                                     </li><!--end menu box-->
                                     <li class="menu-box clearfix margin-b-20">
@@ -439,8 +439,8 @@
                                             <!-- <img src="assets/images/img-4.jpg" width="70" class="img-responsive" alt=""> -->
                                         </div>
                                         <div class="menu-content">
-                                            <h4><a href="#">Vin "Blanc de Suresnes" 25 cl</a> <span>9 €</span></h4>
-                                            <!-- <p>Pomme, poire</p> -->
+                                            <h4><a href="#">Vin IDF 25 cl</a> <span>9 €</span></h4>
+                                            <p>Vin "Blanc de Suresnes"</p>
                                         </div>
                                     </li><!--end menu box-->
                                     <li class="menu-box clearfix margin-b-20">
@@ -449,7 +449,7 @@
                                         </div>
                                         <div class="menu-content">
                                             <h4><a href="#">Vin (hors IDF) 15 cl</a> <span>4.50 €</span></h4>
-                                            <!-- <p>Pomme, poire</p> -->
+                                            <p>(vin rouge ou blanc au plus proche et selon arrivage)</p>
                                         </div>
                                     </li><!--end menu box-->
                                     <li class="menu-box clearfix margin-b-20">
@@ -477,13 +477,13 @@
 
                     </div><!--end tabs-->
                 </div>
-                <div class="col-md-6 text-center">
+               <!--  <div class="col-md-6 text-center">
 
                     <div class="abso-img">
-                      <!--   <a href="menu-tiles.html" class="btn btn-dark btn-xl">View Full Menu</a>
-                        <img src="assets/images/m1.jpg" alt="" class="img-responsive"> -->
+                        <a href="menu-tiles.html" class="btn btn-dark btn-xl">View Full Menu</a>
+                        <img src="assets/images/m1.jpg" alt="" class="img-responsive">
                     </div>
-                </div>              
+                </div>               -->
             </div>
         </div>
         <div class="space-70"></div>

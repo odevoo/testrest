@@ -232,7 +232,7 @@ h6 {
 }
 
 .text-color {
-  color: #c0996b;
+  color: #000;
 }
 
 .display-table {
@@ -1390,7 +1390,7 @@ Call to actions
 }
 
 .cta-skin {
-  background-color: #c0996b;
+  background-color: #908a82;
   padding: 30px 0;
   padding-bottom: 0px;
 }
@@ -1452,13 +1452,13 @@ Tabs style
   display: block;
   text-transform: uppercase;
   background: #f5f5f5;
-  color: #c0996b;
+  color: black;
   display: block;
   font-weight: 700;
 }
 .menu-tabs li.active a, .menu-tabs li a:hover {
-  background-color: #c0996b;
-  color: #fff;
+  background-color: black;
+  color: #f5f5f5;
 }
 
 /*
@@ -1698,7 +1698,7 @@ Shop Pages
 contact page
 */
 .contact-wrapper {
-  background: #c0996b;
+  background: #908a82;
 }
 
 .address-bg {

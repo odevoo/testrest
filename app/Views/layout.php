@@ -41,8 +41,8 @@
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#">Le Restaurant</a></li>
-                            <li><a href="#">La Boutique</a></li>
-                            <li><a href="#">News</a></li>
+                            <li><a href="<?= $this->url('shop_shop');?>">La Boutique</a></li>
+                            <!-- <li><a href="#">News</a></li> -->
                             <li><a href="#">informations</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
