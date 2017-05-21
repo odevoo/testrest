@@ -120,16 +120,16 @@ class ProductModel extends \W\Model\UsersModel
     }
 
 
-    // public function isTeacher($id)
-    // {
-    //     $sql = 'SELECT is_teacher FROM users
-    //             WHERE id = :id';
-    //     $stmt = $this->dbh->prepare($sql);
-    //     $stmt->bindValue(':id', $id);
-    //     $stmt->execute();
-    //     $isTeacher = $stmt->fetch();
-    //     return $isTeacher;
-    // }
+    public function productsBycategory($id)
+    {
+        $sql = 'SELECT * FROM products
+                WHERE id_categorie = :id';
+        $stmt = $this->dbh->prepare($sql);
+        $stmt->bindValue(':id', $id);
+        $stmt->execute();
+        $products = $stmt->fetchAll();
+        return $products;
+    }
 
     // public function findAllTeachers() {
     //     $sql = 'SELECT * FROM users WHERE is_teacher = 1';

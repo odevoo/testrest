@@ -35,7 +35,7 @@ class AdminController extends Controller
 
          move_uploaded_file($_FILES["file"]["tmp_name"], "../public/assets/upload/" . $newfilename);
 
-        $product->insert(['id_categorie' => $product->getIdcategory(), 'name' => $product->getName(), 'img' => $product->getImg(), 'description' => $product->getDescription(), 'quantity' => $product->getQuantity(), 'streetnumber' => $product->getStreetNumber(), 'address' => $product->getAddress(), 'city' => $product->getCity(), 'postcode' => $product->getPostalCode(), 'lng' => $product->getLng(), 'lat' => $product->getLat()]);
+        $product->insert(['id_categorie' => $product->getIdcategory(), 'name' => $product->getName(), 'img' => $product->getImg(), 'description' => $product->getDescription(), 'price' => $product->getPrice(), 'quantity' => $product->getQuantity(), 'streetnumber' => $product->getStreetNumber(), 'address' => $product->getAddress(), 'city' => $product->getCity(), 'postcode' => $product->getPostalCode(), 'lng' => $product->getLng(), 'lat' => $product->getLat()]);
     }
 
 }

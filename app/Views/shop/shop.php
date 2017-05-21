@@ -2,7 +2,7 @@
 
 <?php $this->start('main_content') ?>
 <?php debug($categories) ?>
-<?php //debug($products) ?>
+<?php debug($products) ?>
 <div class="container">
 
     <div class="row">
@@ -31,7 +31,16 @@
                 </div>
                 <div class="panel-body">
                     <img src="<?php echo $this->assetUrl($product['img']); ?>" class="img-responsive img-rounded " alt="logo" />
-                    <p><?php echo $product['description'] ?></p>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8">
+                       <p><?php echo $product['description'] ?></p> 
+                    </div>
+                    <div class="col-md-4">
+                        <p  class="text-right"><strong><?php echo $product['price']."€/".$product['quantity'] ?></strong></p>
+                    </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

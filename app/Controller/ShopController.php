@@ -22,6 +22,13 @@ class ShopController extends Controller
         $this->show('shop/shop', ['categories' => $categoriesdata, 'products' => $productdata]);
     }
 
+    public function shopBycategory($id){
+        $categories = new CategoryModel;
+        $categoriesdata = $categories->findAll();
+        $product = new ProductModel;
+        $productdata = $product->productsBycategory($id);
+        $this->show('shop/shop', ['categories' => $categoriesdata, 'products' => $productdata]);
+    }
     
 
 }
