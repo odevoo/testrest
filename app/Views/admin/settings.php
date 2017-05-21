@@ -8,14 +8,14 @@
 <body>
     <div class="container-fluid">
         
-        <form action="<?= $this->url('admin_process_settings') ?>" method="post" accept-charset="utf-8">
+        <form action="<?= $this->url('admin_process_settings') ?>" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="name">Nom</label>
                 <input class="form-control"  type="text" name="name" id="name" placeholder="">
             </div>
             <div class="form-group">
                 <label for="img">Image</label>
-                <input class="form-control"  type="file" name="img" id="img" placeholder="">
+                <input class="form-control"  type="file" name="file" id="img" placeholder="">
             </div>
             <div class="form-group">
                 <label for="desc">Description</label>
