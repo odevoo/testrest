@@ -10,4 +10,5 @@
 
 
         ['POST', '/processsettings', 'Admin#process_settings', 'admin_process_settings'],
+        ['POST', '/processnews', 'Admin#process_news', 'admin_process_news'],
 	);

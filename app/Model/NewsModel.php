@@ -40,7 +40,7 @@ class NewsModel extends \W\Model\UsersModel
 
 
     //    Get
-    public function geTitle() {
+    public function getTitle() {
         return $this->title;
     }
     public function getImg() {
