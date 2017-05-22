@@ -3,6 +3,7 @@
 namespace Controller;
 
 use \W\Controller\Controller;
+use \Model\NewsModel;
 
 class DefaultController extends Controller
 {
@@ -12,7 +13,9 @@ class DefaultController extends Controller
 	 */
 	public function home()
 	{
-		$this->show('default/home');
+        $news = new NewsModel;
+        $newsdata = $news->getLastnews();
+		$this->show('default/home', ['news' => $newsdata]);
 	}
 
     public function admin()

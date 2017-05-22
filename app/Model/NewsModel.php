@@ -52,16 +52,15 @@ class NewsModel extends \W\Model\UsersModel
    
 
 
-    // public function isTeacher($id)
-    // {
-    //     $sql = 'SELECT is_teacher FROM users
-    //             WHERE id = :id';
-    //     $stmt = $this->dbh->prepare($sql);
-    //     $stmt->bindValue(':id', $id);
-    //     $stmt->execute();
-    //     $isTeacher = $stmt->fetch();
-    //     return $isTeacher;
-    // }
+    public function getLastnews()
+    {
+        $sql = 'SELECT * FROM news ORDER BY id_news DESC LIMIT 1';
+        $stmt = $this->dbh->prepare($sql);
+        
+        $stmt->execute();
+        $news = $stmt->fetch();
+        return $news;
+    }
 
     // public function findAllTeachers() {
     //     $sql = 'SELECT * FROM users WHERE is_teacher = 1';

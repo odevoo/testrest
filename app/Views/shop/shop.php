@@ -1,18 +1,22 @@
 <?php $this->layout('layout', ['title' => 'Boutique']) ?>
 
 <?php $this->start('main_content') ?>
-<?php debug($categories) ?>
-<?php debug($products) ?>
+<?php //debug($categories) ?>
+<?php //debug($products) ?>
+<div style="height: 65px; background-color: black; margin-bottom: 50px;">
+    
+</div>
 <div class="container">
 
     <div class="row">
-        <div class="col-md-1">
-
+        <div style="margin-bottom: 30px;" class="col-md-2 text-center">
+             <a href="<?= $this->url('shop_shop');?>">
+             <p class="">Tous les produits</p></a>
         </div>
         <?php foreach ($categories as $categorie): ?>
-            <div class="col-md-2">
+            <div style="margin-bottom: 30px;" class="col-md-2 text-center">
                 <a href="<?= $this->url('shop_by_category',["id" => $categorie['id_categorie']]); ?>">
-                <button class="btn btn-lg btn-primary"><?php echo $categorie['name'] ?></button></a>
+                <p class=""><?php echo $categorie['name'] ?></p></a>
             </div>
         <?php endforeach ?>
     </div>

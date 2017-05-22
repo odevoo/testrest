@@ -8,22 +8,22 @@ $(document).ready(function () {
         delay: 0
     }).dropdown();
 // site preloader
-    $(window).load(function () {
+    $(window).on('load', function () {
         $('#preloader').fadeOut('slow', function () {
             $(this).remove();
         });
     });
 //sticky header
-    $(window).resize(function () {
-        $(".navbar-collapse").css({maxHeight: $(window).height() - $(".navbar-header").height() + "px"});
-    });
+    // $(window).resize(function () {
+    //     $(".navbar-collapse").css({maxHeight: $(window).height() - $(".navbar-header").height() + "px"});
+    // });
 
 //sticky header on scroll
-    $(window).load(function () {
+    $(window).on('load', function () {
         $(".sticky-header").sticky({topSpacing: 0});
     });
     //hero text fade flexslider
-    $(window).load(function () {
+    $(window).on('load', function () {
         $('.gallery-slider').flexslider({
             controlNav: false,
             directionNav: true,
@@ -32,7 +32,7 @@ $(document).ready(function () {
     });
 
 //testimonial slider
-    $(window).load(function () {
+    $(window).on('load', function () {
         $('.testi-slider').flexslider({
             smoothHeight: true,
             controlNav: true,

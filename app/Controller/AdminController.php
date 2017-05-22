@@ -5,6 +5,7 @@ namespace Controller;
 use \W\Controller\Controller;
 use \Model\ProductModel;
 use \Model\CategoryModel;
+use \Model\NewsModel;
 
 class AdminController extends Controller
 {
@@ -29,8 +30,6 @@ class AdminController extends Controller
     {
         debug($_FILES);
         debug($_POST);
-        //$temp = explode(".", $_FILES["file"]["name"]);
-        //$newfilename = $_POST['name'] . '.' . end($temp);
         $product = new ProductModel ($_POST['category'], $_POST['name'], 'upload/'.$_FILES["file"]["name"], $_POST['desc'], $_POST['price'], $_POST['quantity'], $_POST['streetNumber'], $_POST['address'], $_POST['city'], $_POST['zip'], $_POST['lat'], $_POST['lng']);
 
          move_uploaded_file($_FILES["file"]["tmp_name"], "../public/assets/upload/" . $_FILES["file"]["name"]);
@@ -41,8 +40,9 @@ class AdminController extends Controller
     {
         debug($_FILES);
         debug($_POST);
-        // $temp = explode(".", $_FILES["file"]["name"]);
-        // $newfilename = $_POST['name'] . '.' . end($temp);
+        $news = new NewsModel($_POST['title'], 'upload/'.$_FILES["file"]["name"], $_POST['content']);
+        move_uploaded_file($_FILES["file"]["tmp_name"], "../public/assets/upload/" . $_FILES["file"]["name"]);
+        $news->insert(['title' => $news->getTitle(), 'img' => $news->getImg(), 'content' => $news->getContent()]);
         // $product = new ProductModel ($_POST['category'], $_POST['name'], 'upload/'.$newfilename, $_POST['desc'], $_POST['price'], $_POST['quantity'], $_POST['streetNumber'], $_POST['address'], $_POST['city'], $_POST['zip'], $_POST['lat'], $_POST['lng']);
 
         //  move_uploaded_file($_FILES["file"]["tmp_name"], "../public/assets/upload/" . $newfilename);
