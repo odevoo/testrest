@@ -41,8 +41,9 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#carte">Le Restaurant</a></li>
                             <li><a href="<?= $this->url('shop_shop');?>">La Boutique</a></li>
+                            <li><a href="#carteancre">Le Restaurant</a></li>
+                            
                             <!-- <li><a href="#">News</a></li> -->
                             <li><a href="#info">informations</a></li>
                         </ul>
@@ -67,14 +68,14 @@
                         <div class="overflow-hidden">
                             <h4>Email</h4>
                             <p class="lead">
-                                chezvictor75@gmail.com
+                                <a id="mailto" href="mailto:chezvictor75@gmail.com" title="">chezvictor75@gmail.com</a>
                             </p>
                         </div>
                     </div>
                     <div class="col-sm-4 margin-b-30">
                         <i class="ion-email"><img class="iconimg" src="<?= $this->assetUrl('images/phone-call.png') ?>" alt=""></i>
                         <div class="overflow-hidden">
-                            <h4>Telephone</h4>
+                            <h4>Téléphone</h4>
                             <p class="lead">
                                 01 01 01 01 01
                             </p>

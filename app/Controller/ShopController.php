@@ -30,5 +30,10 @@ class ShopController extends Controller
         $this->show('shop/shop', ['categories' => $categoriesdata, 'products' => $productdata]);
     }
     
+    public function getAllProducts() {
+        $product = new ProductModel;
+        $productdata['data'] = $product->findAll();
+        return $this->showJson($productdata);
+    }
 
 }

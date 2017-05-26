@@ -7,6 +7,7 @@
         ['GET', '/shop', 'Shop#showShop', 'shop_shop'],
         ['GET', '/shop/[:id]', 'Shop#shopBycategory', 'shop_by_category'],
         ['GET', '/mentions', 'Default#mention', 'mention'],
+        ['POST', '/getallproducts', 'Shop#getAllProducts', 'shop_getallproducts'],
 
 
 

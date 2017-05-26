@@ -180,7 +180,7 @@
                 </div>
             </div>
         </div><!--end call to action-->
-        <div id="carte" class="space-70"></div>
+        <div id="carteancre" class="space-70"></div>
 
         <div class="container">
             <div class="text-center">
@@ -537,12 +537,13 @@
                             <!--Google Maps-->
                             <div class="google-map-container">
                                 <div id="googlemaps" style="width: 100%;height: 400px;">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.225827372339!2d2.314458951494538!3d48.8348310102172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6704a4541420d%3A0xee51ca5c29a8f8dd!2s73+Rue+Pernety%2C+75014+Paris!5e0!3m2!1sfr!2sfr!4v1486533497742" width="200" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.225827372339!2d2.314458951494538!3d48.8348310102172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6704a4541420d%3A0xee51ca5c29a8f8dd!2s73+Rue+Pernety%2C+75014+Paris!5e0!3m2!1sfr!2sfr!4v1486533497742" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 
                                 </div>
                             </div>
                             <!--/Google Maps-->
                         </div>
+                       
                         <div class="col-md-4 no-padd address-bg">
                             <h3 class="chezvictorinfo">Chez victor</h3>
                             <ul class="list-unstyled">
