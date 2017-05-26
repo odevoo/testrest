@@ -6,15 +6,18 @@
 <div style="height: 65px; background-color: black; margin-bottom: 50px;">
     
 </div>
-<div class="container">
+<br>
+    <h4 class="text-center">Tous les produits de Chez Victor ne sont pas présentés sur le site internet, venez les decouvrir en magasin!</h4>
+    <br>
+<div class="container shop-container">
 
     <div class="row">
-        <div style="margin-bottom: 30px;" class="col-md-2 text-center">
+        <div  class="shop-cat shop-cat-all col-md-2 text-center">
              <a href="<?= $this->url('shop_shop');?>">
              <p class="">Tous les produits</p></a>
         </div>
         <?php foreach ($categories as $categorie): ?>
-            <div style="margin-bottom: 30px;" class="col-md-2 text-center">
+            <div  class="shop-cat col-md-2 text-center">
                 <a href="<?= $this->url('shop_by_category',["id" => $categorie['id_categorie']]); ?>">
                 <p class=""><?php echo $categorie['name'] ?></p></a>
             </div>
@@ -27,14 +30,14 @@
             <?php
             foreach($products as $product) : ?>
 
-            <div class="col-md-4">
+            <div class="col-md-4 panel-product">
                 
                 <div class="panel panel-default">
                   <div class="panel-heading">
                   <h3 class="panel-title"><?php echo $product['name'] ?></h3>
                 </div>
                 <div class="panel-body">
-                    <img src="<?php echo $this->assetUrl($product['img']); ?>" class="img-responsive img-rounded " alt="logo" />
+                    <img src="<?php echo $this->assetUrl($product['img']); ?>" class="img-responsive img-rounded img-product " alt="logo" />
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-8">
@@ -53,7 +56,7 @@
     <?php endforeach; ?>
 </div>
 <?php endforeach; ?>
-
-
+</div>
+<div class="space-70"></div>
 </div>
 <?php $this->stop('main_content') ?>

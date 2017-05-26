@@ -41,10 +41,10 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="<?= $this->url('default_home');?>">Le Restaurant</a></li>
+                            <li><a href="#carte">Le Restaurant</a></li>
                             <li><a href="<?= $this->url('shop_shop');?>">La Boutique</a></li>
                             <!-- <li><a href="#">News</a></li> -->
-                            <li><a href="<?= $this->url('default_home');?>">informations</a></li>
+                            <li><a href="#info">informations</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div><!--/.container-fluid -->
@@ -63,7 +63,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4 margin-b-30">
-                        <i class="ion-email"></i>
+                        <i class="ion-email"><img class="iconimg" src="<?= $this->assetUrl('images/envelope.png') ?>" alt=""></i>
                         <div class="overflow-hidden">
                             <h4>Email</h4>
                             <p class="lead">
@@ -72,7 +72,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4 margin-b-30">
-                        <i class="ion-email"></i>
+                        <i class="ion-email"><img class="iconimg" src="<?= $this->assetUrl('images/phone-call.png') ?>" alt=""></i>
                         <div class="overflow-hidden">
                             <h4>Telephone</h4>
                             <p class="lead">
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4 margin-b-30">
-                        <i class="ion-map"></i>
+                        <i class="ion-map"><img class="iconimg" src="<?= $this->assetUrl('images/house.png') ?>" alt=""></i>
                         <div class="overflow-hidden">
                             <h4>Adresse</h4>
                             <p class="lead">
@@ -95,66 +95,55 @@
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 margin-b-30">
-                        <!-- <img class="margin-b-20" src="assets/images/logo-light.png" alt=""> -->
+
+                    <div class="col-md-4 margin-b-30">
+                        <h3>Nos partenaires</h3>
                         <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                        </p>
-                        <!-- <h5><a href="#">Read More...</a></h5> -->
+                            Votre magasin & restaurant Chez Victor est engagé et soutenu par:</p>
+<p><strong>CERVIA</strong> (Centre Régional de Valorisation et d'Innovation Agricole et Alimentaire)</p>
+<img class="img-partner img-responsive" src="<?= $this->assetUrl('images/logo_CERVIA.jpg') ?>" alt="">
+<br>
+<p><strong>Bon pour le climat</strong></p>
+<img class="img-partner img-responsive" src="<?= $this->assetUrl('images/Logo-Bon-pour-le-climat.jpg') ?>" alt="">
                     </div>
-                    <div class="col-md-3 margin-b-30">
-                        <h3>Actualités récentes</h3>
-                        <ul class="list-unstyled recent-post">
-                            <li class="clearfix">
-                                <a href="#">
-                                   <!--  <img src="assets/images/a1.jpg" alt="" width="70"> -->
-                                </a>
-                                <div class="post-content">
-                                    <h5><a href="#">Ouverture</a></h5>
-                                    <span>1 Avril 2017</span>
+                    <div class="col-md-4 margin-b-30">
+                        <h3>Nos horaires</h3>
+                        <p><span class="text-color">Lundi: </span>Fermé</p>
+                        <p><span class="text-color">Mardi:</span> 12h - 20h</p>
+                        <p><span class="text-color">Mercredi :</span> 12h - 20h</p>
+                        <p><span class="text-color">Jeudi:</span> 12h - 20h</p>
+                        <p><span class="text-color">Vendredi:</span> 12h - 20h</p>
+                        <p><span class="text-color">Samedi:</span> 10h - 15h</p>
+                        <p><span class="text-color">Dimanche:</span>Fermé</p>
+                    </div>
+                    <div class="col-md-4 margin-b-30">
+                        <h3>Nous suivre</h3>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-1 icondiv">
+                                    <p><a href="https://www.facebook.com/chezvictor75/" target="_blank"><img class="" src="<?= $this->assetUrl('images/facebook.png') ?>" alt=""></a></p>
                                 </div>
-                            </li>
-                            <li class="clearfix">
-                                <a href="#">
-                                    <!-- <img src="assets/images/a2.jpg" alt="" width="70"> -->
-                                </a>
-                                <div class="post-content">
-                                    <h5><a href="#">Nouvel arrivage</a></h5>
-                                    <span>2 Avril 2017</span>
+                                <div class="col-sm-1 icondiv">
+                                    <p><a href="https://www.instagram.com/chezvictor75/" target="_blank"><img class="" src="<?= $this->assetUrl('images/instagram.png') ?>" alt=""></a></p>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 margin-b-30">
-                        <h3>Horaires</h3>
-                        <p><span class="text-color">lundi: </span>8h - 18h</p>
-                        <p><span class="text-color">Mardi:</span> 8h - 18h</p>
-                        <p><span class="text-color">Mercredi :</span> 8h - 18h</p>
-                        <p><span class="text-color">Jeudi:</span> 8h - 18h</p>
-                        <p><span class="text-color">Vendredi:</span> 8h - 18h</p>
-                        <p><span class="text-color">Samedi:</span> 8h - 18h</p>
-                        <p><span class="text-color">Dimanche:</span> 8h - 18h</p>
-                    </div>
-                    <div class="col-md-3 margin-b-30">
-                        <h3>Réseaux sociaux</h3>
-                        <p class="lead">
-                           <!--  Ipsum Street, Lorem Tower, MO, Columbia, 302012 -->
-                        </p>
-                        <!-- <p class="lead"><a href="#">+01 1800 100 1000</a></p>
-                        <p><a href="#">info@resto.com</a></p> -->
+                                <div class="col-sm-1 icondiv">
+                                    <p><a href="https://twitter.com/chezvictor75" target="_blank"><img class="" src="<?= $this->assetUrl('images/twitter.png') ?>" alt=""></a></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="col-sm-12 text-center">
-                        <ul class="list-inline f-social">
+<!--                         <ul class="list-inline f-social">
                             <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                             <li><a href="#"><i class="ion-social-twitter"></i></a></li>
                             <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
                             <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
                             <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-                        </ul>
-                        <span>&copy; Copyright 2017. Chez Victor</span>
+                        </ul> -->
+                        <span>&copy; Copyright 2017. Chez Victor <a href="<?= $this->url('mention') ?>" title="">Mentions légales</a></span>
                     </div>
                 </div>
             </div>

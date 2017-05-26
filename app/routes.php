@@ -6,6 +6,8 @@
         ['GET', '/settings', 'Admin#settings', 'admin_settings'],
         ['GET', '/shop', 'Shop#showShop', 'shop_shop'],
         ['GET', '/shop/[:id]', 'Shop#shopBycategory', 'shop_by_category'],
+        ['GET', '/mentions', 'Default#mention', 'mention'],
+
 
 
 

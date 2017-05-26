@@ -130,48 +130,48 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 text-center">
-                            <h1 class="title-1">Bienvenue Chez Victor</h1>  
+                        <h1 class="title-1">Bienvenue <span class="chezvictor">Chez Victor</span></h1>  
                             <h5 class="subtitle">Qui sommes-nous?</h5>
                             <div class="space-30"></div>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <span class="text-color">commodo</span> ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                            </p>
-                            <blockquote>
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            <p>Situé dans le 14eme arrondissement de Paris, dans le quartier de Pernety, Chez Victor est à la fois une boutique et un restaurant de produits locaux.</p>
+                            <p>Pour vos achats au magasin, une sélection de produits frais et locaux vous sera proposé : fruits et légumes, charcuterie, fromages, épicerie, et bien d’autres encore ! 
+                                L’engagement est simple, vous proposer des aliments de qualité issus de l’agriculture de proximité – Moins de 100 kilomètres du point de vente.</p><p>
+                                Côté cuisine, pour vos déjeuners ou encore pour un brunch improvisé du samedi, vous pourrez choisir à la carte parmi des plats simples, gourmands et de saison.
+                                Là-encore, nous réalisons l’essentiel à partir de circuits locaux.</p><p>
+                                Tout cela évoluera, évidemment, au fil des saisons et des envies.</p><p>
+                                A très vite Chez Victor.</p>
+                                <!--  <img src="assets/images/sign.png" alt=""> -->
+                                <!-- <div class="space-30"></div> -->
+                            </div>
+                            <div class="col-md-6 text-center">
 
-                            </blockquote>
-                            <!--  <img src="assets/images/sign.png" alt=""> -->
-                            <!-- <div class="space-30"></div> -->
-                        </div>
-                        <div class="col-md-6 text-center">
-
-                        <h1 class="title-1 text-center">L'actualité</h1>
-                            <h5 class="subtitle"><?php echo $news['title'] ?></h5>
-                            <div class="space-30"></div>
-                            <div class="coantainer">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <article>
-                                            <?php echo $news['content'] ?>
-                                        </article>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <img src="<?php echo $this->assetUrl($news['img']); ?>" class="img-responsive"/>
+                                <h1 class="title-1 text-center">L'actualité</h1>
+                                <h5 class="subtitle"><?php echo $news['title'] ?></h5>
+                                <div class="space-30"></div>
+                                <div class="coantainer">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <article>
+                                                <?php echo $news['content'] ?>
+                                            </article>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img src="<?php echo $this->assetUrl($news['img']); ?>" class="img-responsive"/>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            
 
-                            <!--  <img src="assets/images/combine1.png" alt="" class="img-responsive"> -->
+
+                                <!--  <img src="assets/images/combine1.png" alt="" class="img-responsive"> -->
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="space-70"></div>
-            <div class="cta-background parallax-background" data-stellar-background-ratio="0.3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8 col-sm-offset-4 text-left">
+                <div class="space-70"></div>
+                <div class="cta-background parallax-background" data-stellar-background-ratio="0.3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-offset-4 text-left">
                         <!-- <p class="lead ">
                             " Cooking everything with respect will lead to amazing tasting experiences "
                         </p>
@@ -180,11 +180,11 @@
                 </div>
             </div>
         </div><!--end call to action-->
-        <div class="space-70"></div>
+        <div id="carte" class="space-70"></div>
 
         <div class="container">
             <div class="text-center">
-                <h1 class="title-1">Menu Chez Victor</h1>  
+                <h1 class="title-1">Menu <span class="chezvictor">Chez Victor</span></h1>  
                 <h5 class="subtitle">la carte</h5>
                 <div class="space-30"></div>
             </div>
@@ -206,9 +206,9 @@
                                 <ul class="list-unstyled">
                                     <li class="menu-box clearfix margin-b-20">
                                         <div class="thumb">
-                                         <!--  <img src="assets/images/a2.jpg" width="70" class="img-responsive" alt=""> -->
-                                     </div>
-                                     <div class="menu-content">
+                                           <!--  <img src="assets/images/a2.jpg" width="70" class="img-responsive" alt=""> -->
+                                       </div>
+                                       <div class="menu-content">
                                         <h4><a href="#">Entrée + Plat / Plat + Dessert</a> <span>13 €</span></h4>
                                         <!-- <p>pellentesque enim. Aliquam tempor</p> -->
                                     </div>
@@ -246,9 +246,9 @@
                     <ul class="list-unstyled">
                         <li class="menu-box clearfix margin-b-20">
                             <div class="thumb">
-                               <!--    <img src="assets/images/img-6.jpg" width="70" class="img-responsive" alt=""> -->
-                           </div>
-                           <div class="menu-content">
+                             <!--    <img src="assets/images/img-6.jpg" width="70" class="img-responsive" alt=""> -->
+                         </div>
+                         <div class="menu-content">
                             <h4><a href="#">Soupe</a> <span>4 €</span></h4>
                             <p>25 cl</p>
                         </div>
@@ -264,9 +264,9 @@
                     </li><!--end menu box-->
                     <li class="menu-box clearfix margin-b-20">
                         <div class="thumb">
-                         <!--  <img src="assets/images/img-1.jpg" width="70" class="img-responsive" alt=""> -->
-                     </div>
-                     <div class="menu-content">
+                           <!--  <img src="assets/images/img-1.jpg" width="70" class="img-responsive" alt=""> -->
+                       </div>
+                       <div class="menu-content">
                         <h4><a href="#">Salade</a> <span>7 €</span></h4>
                         <p>Grande</p>
                     </div>
@@ -358,18 +358,18 @@
                 </li><!--end menu box-->
                 <li class="menu-box clearfix margin-b-20">
                     <div class="thumb">
-                     <!--  <img src="assets/images/img-6.jpg" width="70" class="img-responsive" alt=""> -->
-                 </div>
-                 <div class="menu-content">
+                       <!--  <img src="assets/images/img-6.jpg" width="70" class="img-responsive" alt=""> -->
+                   </div>
+                   <div class="menu-content">
                     <h4><a href="#">Planche charcutière</a> <span>12 €</span></h4>
                     <p>(100% IDF)</p>
                 </div>
             </li><!--end menu box-->
             <li class="menu-box clearfix margin-b-20">
                 <div class="thumb">
-                 <!--  <img src="assets/images/img-5.jpg" width="70" class="img-responsive" alt=""> -->
-             </div>
-             <div class="menu-content">
+                   <!--  <img src="assets/images/img-5.jpg" width="70" class="img-responsive" alt=""> -->
+               </div>
+               <div class="menu-content">
                 <h4><a href="#">Planche mixte</a> <span>11 €</span></h4>
                 <p>(100% IDF)</p>
             </div>
@@ -389,18 +389,18 @@
     <ul class="list-unstyled">
         <li class="menu-box clearfix margin-b-20">
             <div class="thumb">
-             <!--  <img src="assets/images/img-9.jpg" width="70" class="img-responsive" alt=""> -->
-         </div>
-         <div class="menu-content">
+               <!--  <img src="assets/images/img-9.jpg" width="70" class="img-responsive" alt=""> -->
+           </div>
+           <div class="menu-content">
             <h4><a href="#">Boissons chaudes</a> <span>2 €</span></h4>
             <p>Café torréfié à Paris, infusion de Milly / Hors IDF: chocolat, thé</p>
         </div>
     </li><!--end menu box-->
     <li class="menu-box clearfix margin-b-20">
         <div class="thumb">
-         <!--  <img src="assets/images/img-6.jpg" width="70" class="img-responsive" alt=""> -->
-     </div>
-     <div class="menu-content">
+           <!--  <img src="assets/images/img-6.jpg" width="70" class="img-responsive" alt=""> -->
+       </div>
+       <div class="menu-content">
         <h4><a href="#">Eau</a> <span>2 €</span></h4>
         <p>Saint Lambert / Chevreuse</p>
     </div>
@@ -519,11 +519,11 @@
                 </div>
             </div>
         </div><!--about chef cta-->
-        <div class="testimonials" data-stellar-background-ratio="0.5">
+        <div id="info" class="testimonials" data-stellar-background-ratio="0.5">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
-                        <div class="text-center">
+                        <div  class="text-center">
                             <h1 class="title-1">Informations <span class="text-color "></span></h1>  
                             <!-- <h5 class="subtitle">What they say</h5> -->
                             <div class="space-30"></div>
@@ -544,18 +544,18 @@
                             <!--/Google Maps-->
                         </div>
                         <div class="col-md-4 no-padd address-bg">
-                            <h3>Chez victor</h3>
+                            <h3 class="chezvictorinfo">Chez victor</h3>
                             <ul class="list-unstyled">
-                               <!--  <li>Chez Victor</li> -->
-                                <li>73 rue Pernety</li>
-                                <li>75014 Paris</li>
-                                <li>Metro: Ligne 13 Pernety</li>
+                             <!--  <li>Chez Victor</li> -->
+                             <li>73 rue Pernety</li>
+                             <li>75014 Paris</li>
+                             <li>Metro: Ligne 13 Pernety</li>
 
-                                <!-- <li>Phone (123) 123-456 </li> -->
-                            </ul> 
-                        </div>
-                    </div>
-                </div><!--/map wrap-->
+                             <!-- <li>Phone (123) 123-456 </li> -->
+                         </ul> 
+                     </div>
+                 </div>
+             </div><!--/map wrap-->
 
 
 

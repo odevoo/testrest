@@ -22,5 +22,8 @@ class DefaultController extends Controller
     {
         $this->show('default/admin');
     }
+    public function mention() {
+        $this->show('default/mention');
+    }
 
 }

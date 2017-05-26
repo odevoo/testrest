@@ -4,6 +4,12 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:500,600,700";
 @import "https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900";
 @import "https://fonts.googleapis.com/css?family=Dancing+Script:400,700";
+
+@font-face {
+    font-family: Argon;
+    src: url("../font/ArgonPERSONAL-Regular.otf") format("opentype");
+}
+
 /*
 Base csss
 */
@@ -993,7 +999,7 @@ Slider styles
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Argon", sans-serif;
   padding: 12px 20px;
   padding-top: 20px;
   border: 1px solid #fff;
@@ -2058,4 +2064,67 @@ label.error {
 
 .logo {
     width: 175px;
+}
+
+.chezvictor {
+  font-family: "Argon", sans-serif !important;
+  font-size: 1.1em !important;
+  font-weight: 100 !important;
+}
+.chezvictorinfo {
+  font-family: "Argon", sans-serif !important;
+  font-size: 2em !important;
+  font-weight: 100 !important;
+}
+
+.iconimg {
+  vertical-align: text-top;
+}
+
+.icondiv {
+  width: 100%;
+  display: inline-block;
+}
+
+.img-partner {
+  width: 180px !important;
+}
+
+.shop-cat {
+/*  padding: 0;
+  margin-left: 15px;*/
+/*  margin-right: 15px;*/
+  margin-bottom: 30px;
+  background-color: rgba(189, 195, 199, 0.2);
+  border: 1px solid rgba(189, 195, 199,0.4);
+ 
+
+}
+
+
+.shop-cat:hover {
+
+    box-shadow: 2px 2px 2px 2px rgba(189, 195, 199,0.4);
+}
+
+.shop-cat a {
+  color: black !important;
+  font-weight: bold;
+}
+
+
+/*.shop-cat-all {
+  margin-left: 15px;
+  padding-left: 0 !important;
+}*/
+
+.panel-product {
+ /* padding: 0;*/
+}
+
+.shop-container {
+  border: 1px solid rgba(189, 195, 199, 0.8);
+}
+.img-product {
+  width: 100%;
 }
