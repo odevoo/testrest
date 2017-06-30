@@ -5,7 +5,7 @@ $w_config = [
 	'db_host' => 'chezvictuhvictor.mysql.db',						//hôte (ip, domaine) de la bdd
     'db_user' => 'chezvictuhvictor',							//nom d'utilisateur pour la bdd
     'db_pass' => 'Cutkiller78',								//mot de passe de la bdd
-    'db_name' => 'chezvictor',								//nom de la bdd
+    'db_name' => 'chezvictuhvictor',								//nom de la bdd
     'db_table_prefix' => '',						//préfixe ajouté aux noms de table
 
 	//authentification, autorisation
