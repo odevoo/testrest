@@ -30,7 +30,7 @@
             <strong>Ouverture prévue courant septembre 2017.</strong>
         </div>
         <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
             <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
     </div>
@@ -62,15 +62,15 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                   <!--  <li><a href="<?= $this->url('shop_shop');?>">La Boutique</a></li> -->
-                    <li><a href="#carteancre">Le Restaurant</a></li>
+                 <!--  <li><a href="<?= $this->url('shop_shop');?>">La Boutique</a></li> -->
+                 <li><a href="#carteancre">Le Restaurant</a></li>
 
-                    <!-- <li><a href="#">News</a></li> -->
-                    <li><a href="#info">informations</a></li>
-                </ul>
-            </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-    </nav>
+                 <!-- <li><a href="#">News</a></li> -->
+                 <li><a href="#info">informations</a></li>
+             </ul>
+         </div><!--/.nav-collapse -->
+     </div><!--/.container-fluid -->
+ </nav>
 </header>
 
 
@@ -78,7 +78,7 @@
 
 
 <section>
- <?= $this->section('main_content') ?>
+   <?= $this->section('main_content') ?>
 </section>
 
 <div class="cta-skin contact-info">
@@ -215,7 +215,19 @@
             });
         </script>
 
-        <!-- END REVOLUTUION -->
 
-    </body>
-    </html>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-89248867-1', 'auto');
+          ga('send', 'pageview');
+
+      </script>
+
+      <!-- END REVOLUTUION -->
+
+  </body>
+  </html>
